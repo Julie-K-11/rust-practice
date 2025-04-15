@@ -1,4 +1,4 @@
-/*написати код,
+/*написати код:
     - який вираховує greatest common divisor
     - (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 */
