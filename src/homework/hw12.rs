@@ -26,8 +26,8 @@ fn count_permutation(shipments: &Vec<u32>) -> i32 {
 
 
 fn gen_shipments(n: usize) -> Vec<u32> {
-    let mut rng = rand::thread_rng();
-    let mut shipments: Vec<u32> = (0..n).map(|_| rng.gen_range(1..=10)).collect();
+    let mut rng = rand::rng();
+    let mut shipments: Vec<u32> = (0..n).map(|_| rng.random_range(1..=10)).collect();
     let total: u32 = shipments.iter().sum();
     let rem = total % n as u32;
 
